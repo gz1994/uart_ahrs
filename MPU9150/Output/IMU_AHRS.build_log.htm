@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: by by, by, LIC=4ZLNN-Y9KQ1-FZDWU-SK889-9SM4G-P6Y7A
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.21a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DARMSTM.DLL V1.66.0.1
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TARMSTM.DLL V1.65.0.0
+ 
+<h2>Project:</h2>
+F:\我的项目\黑晶科技\Pangolin枪\MPU9150_OK\IMU_AHRS.uvprojx
+Project File Date:  08/24/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'IMU_AHRS'
+assembling startup_stm32f10x_md.s...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling delay.c...
+compiling IOI2C.c...
+compiling IMU.c...
+compiling MPU6050.c...
+compiling UART2.c...
+compiling UARTs.c...
+compiling eeprom.c...
+compiling ak8975.c...
+compiling main.c...
+User_Src\main.c(195): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  				sprintf(buffer,"yaw:%f\thx=%d\thy=%d\thz=%d\thx_max/min:%d/%d\thy_min/max:%d/%d\thz_min/max:%d/%d\r\n",
+User_Src\main.c(100): warning:  #177-D: variable "mag_value" was declared but never referenced
+  	float mag_value[3];
+User_Src\main.c(101): warning:  #177-D: variable "Mxh" was declared but never referenced
+  	float Mxh,Myh;
+User_Src\main.c(101): warning:  #177-D: variable "Myh" was declared but never referenced
+  	float Mxh,Myh;
+User_Src\main.c: 4 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_flash.c...
+linking...
+Program Size: Code=24012 RO-data=508 RW-data=184 ZI-data=1904  
+FromELF: creating hex file...
+".\Output\IMU_AHRS.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  F:\我的项目\黑晶科技\Pangolin枪\MPU9150_OK\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
