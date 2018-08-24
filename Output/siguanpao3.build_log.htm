@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: aa Microsoft, Microsoft, LIC=9N0AR-K4WRD-JPWZQ-NM6ZG-V8YHY-CRFV1
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.21a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DARMSTM.DLL V1.66.0.1
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TARMSTM.DLL V1.65.0.0
+ 
+<h2>Project:</h2>
+C:\data\ÏîÄ¿\UART_AHRS\code\uart_ahrs0.1\uart_ahrs.uvproj
+Project File Date:  11/28/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'IMU_AHRS'
+assembling startup_stm32f10x_md.s...
+compiling core_cm3.c...
+compiling delay.c...
+compiling system_stm32f10x.c...
+compiling IOI2C.c...
+compiling HMC5883L.c...
+compiling IMU.c...
+compiling LED.c...
+compiling MPU6050.c...
+compiling UART2.c...
+compiling UARTs.c...
+compiling eeprom.c...
+compiling inout.c...
+compiling main.c...
+User_Src\main.c(153): error:  #20: identifier "Last_angle0" is undefined
+  				if(angles[0]-Last_angle0>50||Last_angle0-angles[0]>50)
+User_Src\main.c(155): error:  #20: identifier "Last_angle1" is undefined
+  					angles[1] = Last_angle1;
+User_Src\main.c(159): error:  #20: identifier "x_angle1" is undefined
+  					x_angle1 = (int16_t)(((ypr[1]*2)+180+20) * 10);
+User_Src\main.c(163): error:  #20: identifier "Last_angle1" is undefined
+  					Last_angle1 = angles[1];
+User_Src\main.c(167): error:  #20: identifier "x_angle1" is undefined
+  					x_angle1 = (int16_t)(((ypr[1]*2)+180+20) * 10);
+User_Src\main.c(170): error:  #20: identifier "Last_angle1" is undefined
+  					angles[1] = Last_angle1*0.95f +x_angle1*0.05f;//2016??12??26??13:39:20
+User_Src\main.c(197): error:  #20: identifier "send_enable" is undefined
+  				if(send_enable)
+User_Src\main.c(220): error:  #20: identifier "send_enable" is undefined
+  						send_enable = 0;
+User_Src\main.c(222): error:  #20: identifier "send_enable" is undefined
+  						send_enable = 1;
+User_Src\main.c: 0 warnings, 9 errors
+compiling stm32f10x_it.c...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_flash.c...
+".\Output\siguanpao3.2" - 9 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
